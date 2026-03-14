@@ -1,0 +1,184 @@
+body {
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: linear-gradient(to bottom, #87CEEB, #bde6f7, #e6f7ff, white);
+
+}
+
+h1 {
+
+    color: #1E90FF;
+
+    margin-bottom: 20px;
+
+}
+
+h3 {
+
+    color: #1E90FF;
+
+    margin-top: 20px;
+
+}
+
+fieldset {
+
+    background-color: white;
+
+    border: 2px solid #87CEEB;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    width: 50%;
+
+    margin: auto;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+legend {
+
+    font-size: 18px;
+
+    color: #1E90FF;
+
+    padding: 5px 15px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    border: 1px solid #bde6f7;
+
+    letter-spacing: 1px;
+
+    font-style: italic;
+
+}
+
+label {
+
+    display: block;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+
+    color: #444;
+
+}
+
+input,
+select,
+textarea {
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    border: 1px solid #87CEEB;
+
+    margin-top: 5px;
+
+    width: 90%;
+
+    box-sizing: border-box;
+
+}
+
+button {
+
+    background-color: #1E90FF;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-top: 15px;
+
+}
+
+button:hover {
+
+    background-color: #0f6cd1;
+
+    transform: scale(1.05);
+
+}
+
+/* CONTENEUR DES LOGOS */
+#logos-container {
+    display: flex;
+    justify-content: center;
+    /* centrer horizontalement */
+    align-items: center;
+    /* centrer verticalement si besoin */
+    gap: 40px;
+    /* espace entre les logos */
+    margin-bottom: 30px;
+    /* espace entre logos et formulaire */
+}
+
+/* LOGOS */
+#logos-container .logo {
+    width: 120px;
+    /* taille des logos */
+    height: auto;
+    /* garder proportions */
+    border-radius: 15px;
+    /* coins légèrement arrondis */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* petit effet */
+    transition: transform 0.3s;
+}
+
+#logos-container .logo:hover {
+    transform: scale(1.05);
+    /* effet au survol */
+}
+
+/* Responsive pour petits écrans (mobile / tablette) */
+@media screen and (max-width: 600px) {
+
+    fieldset {
+        width: 90%;
+        /* formulaire presque plein écran */
+        padding: 15px;
+        /* moins de padding sur petit écran */
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        /* champs prennent toute la largeur disponible */
+    }
+
+    #logos-container {
+        gap: 20px;
+        /* moins d’espace entre les logos */
+        flex-direction: column;
+        /* logos l’un sous l’autre si l’écran est trop petit */
+        align-items: center;
+    }
+}
